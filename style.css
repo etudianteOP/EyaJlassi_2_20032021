@@ -1200,6 +1200,7 @@ h4{
     flex-direction: column;
     font-size: 2em;
     margin-left: 5px; 
+    justify-content: start;
     }
     #titre{
         margin-right: 500px;
