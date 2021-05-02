@@ -2,12 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
     }
 
-    header{
-        display:flex;
-       flex-direction: row;
-       justify-content: space-between;
-       margin: 10px 20px 10px 20px;
-        margin-top: 30px; 
+header{
+ display:flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 10px 20px 10px 20px;
+ margin-top: 30px; 
     }
     
 nav a:hover
@@ -68,9 +68,9 @@ button{
     padding-bottom: 8px;
     width: 81px;
     }
-    .btnIcon 
+ .btnIcon 
     {
-       display: none;
+     display: none;
     }
 #rechercher{
     border-width:0px;
@@ -93,8 +93,6 @@ ul{
     justify-content: space-between;
     list-style-type: none;
     margin-right: 10px ;
-    
-    
 }
 #liens ul li{
     border: solid 1px #e6e1e1;
@@ -105,6 +103,10 @@ ul{
     padding-right:0px ;
     padding-bottom:0px ;
     padding-top:0px;
+}
+#liens a:hover
+{
+    color: #0065FC;
 }
 
 ul li i{
@@ -265,7 +267,7 @@ color: #0065FC;
     object-fit: cover;
     }
 
-    #booking1 {
+#booking1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -511,6 +513,7 @@ padding-bottom: 0px;
 
 #activites {
     display: flex;
+    
 }
 
 #act1, #act2, #act3{
@@ -520,14 +523,14 @@ padding-bottom: 0px;
 
     /*  mise en page du card14*/
 
-    .card14{
+ .card14{
         background-color:white;
         border-radius: 20px;
         border: solid 1px #e6e1e1;
         box-shadow: 3px 3px 6px rgb(173, 167, 167);
         margin-bottom: 20px;
     }
-    .card14 a img{
+ .card14 a img{
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         object-fit: cover;
@@ -543,7 +546,7 @@ padding-bottom: 0px;
         border: solid 1px #e6e1e1;
         box-shadow: 3px 3px 6px rgb(173, 167, 167);
     }
-    .card15 a img{
+.card15 a img{
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         object-fit: cover;
@@ -569,9 +572,6 @@ padding-bottom: 0px;
 #assis{
     flex-direction: column;
 }
-
-
- 
 
 footer{
     display: flex;
@@ -882,10 +882,9 @@ padding-bottom: 0px;
    #activites {
  flex-direction: column;
  width: 95%;
- margin-bottom: 50px;
+ margin-bottom: 0px;
  width: auto;
- margin-bottom: 5px;
- margin-left: 10px;
+ margin-left: 0px;
    
 }
 #act h3{
@@ -894,19 +893,6 @@ padding-bottom: 0px;
     font-size: 1.3em;
 }
 
-.card10{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-bottom: 10px;
-    margin-left: 100px;
-    padding:0px;
-
-}
 .card10 a img 
 {
     max-height: 150px;
@@ -919,18 +905,6 @@ padding-bottom: 0px;
     flex-direction: column;
 }
 
-.card11{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-bottom: 10px;
-    margin-left: 100px;
-    padding:0px;
-}
 .card11 a img 
 {
     max-height: 150px;
@@ -938,19 +912,7 @@ padding-bottom: 0px;
     max-width: 400px;  
 }
 
-.card12{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-bottom: 10px;
-    margin-left: 100px;
-    padding:0px;
 
-}
 .card12 a img 
 {
     max-height: 150px;
@@ -958,19 +920,7 @@ padding-bottom: 0px;
     max-width: 400px;  
 }
 
-.card13{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-left: 100px;
-    margin-bottom: 10px;
-    
 
-}
 .card13 a img 
 {
     max-height: 150px;
@@ -978,18 +928,7 @@ padding-bottom: 0px;
     max-width: 400px;  
 }
 
-.card14{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-left: 100px;
-    margin-bottom: 10px;
 
-}
 .card14 a img 
 {
     max-height: 150px;
@@ -997,17 +936,7 @@ padding-bottom: 0px;
     max-width: 400px;  
 }
 
-.card15{
-    height: auto;
-    width:50%;
-    max-width: 400px;
-    background-color:white;
-    border-radius: 20px;
-    border: solid 1px #e6e1e1;
-    box-shadow: 3px 3px 6px rgb(173, 167, 167);
-    margin-left: 100px;
-    margin-bottom: 10px;
-}
+
 .card15 a img 
 {
     max-height: 150px;
@@ -1022,15 +951,11 @@ padding-bottom: 0px;
     width: 350px;
     margin-bottom: 10px;
     margin-left: 0px;
-    flex-grow: 1;
-    flex-shrink: 1; 
+    
     box-shadow: 3px 3px 6px rgb(173, 167, 167); 
     margin-left: 10px;    
         }
- #act img {
-  width: 350px;  
-  height: 150px;
- }
+ 
         
 footer
 {
@@ -1244,37 +1169,36 @@ aside
            }
            
         
-     aside img {
+aside img {
            
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-            padding-left: 5px;
-            padding-right: 5px;
-            padding-top: 10px;
-            justify-content: center;
-            object-fit: cover;
-            height: 200px;
-            width: 300px;
-            }
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 10px;
+justify-content: center;
+object-fit: cover;
+height: 200px;
+width: 300px;
+}
         
-            #stars7{
-                padding-top: 15px;
+ #stars7{
+  padding-top: 15px;
             }
-            #stars8{
-                padding-top: 15px;
-            }
-            .card9 #part6 h3
-             {
-             line-height: 20px;
-             padding-bottom: 0px;
-             }
-             .card8 #part4 h3{
-                line-height: 30px;
-             }
+ #stars8{
+  padding-top: 15px;
+ }
+ .card9 #part6 h3
+ {
+ line-height: 20px;
+ padding-bottom: 0px;
+ }
+ .card8 #part4 h3{
+  line-height: 30px;
+ }
 
 /*  conteneur*/
 #conteneur{
-    
     
     width: 705px;
     height: 900px;
@@ -1331,34 +1255,93 @@ aside
 #stars4{
     padding-top: 30px;
 
-}          
-/* activités*/
+} 
 
-#bloc-activites{
-   padding-left: 40px;
-   padding-right: 20px;
-   padding-bottom: 30px;
-   flex-direction: row;
-   justify-content: center;
-   margin: 30px;
-   width: 570px;
-   border: 35px solid #F2F2F2;
-}
-
-.card10, .card11, .card12, .card13, .card14, .card15{
+#activites {
+    flex-direction: column;
+    width: 150%;
+    margin-bottom: 10px;
     width: auto;
-    height: auto;
-    justify-content: center;
-
-}
-#bloc-activites img{
-    height:850px ;
-    width:1000px;
-    padding: 0px;
-    margin: 0px;
-}
+    margin-top: 0px;
+    margin-left: 10px;
       
- footer
+   }
+   #act h3{
+       margin-top: 0px;
+       margin-left: 30px;
+       font-size: 1.6em;
+   }
+   #act P{
+    font-size: 1.5em;
+}
+   .card10 a img 
+   {
+       max-height: 250px;
+       width:100%;
+       max-width: 650px;  
+   }
+   
+   #act2 img{
+   
+      height: 250px;
+          }
+    #act4 img{
+      height: 250px;
+                }
+   
+   .card11 a img 
+   {
+    max-height: 250px;
+    width:100%;
+    max-width: 650px;   
+   }
+   
+   
+   .card12 a img 
+   {
+    max-height: 250px;
+    width:100%;
+    max-width: 650px;   
+   }
+   
+   
+   .card13 a img 
+   {
+    max-height: 250px;
+    width:100%;
+    max-width: 650px;   
+   }
+   
+   
+   .card14 a img 
+   {
+    max-height: 250px;
+    width:100%;
+    max-width: 650px;   
+   }
+   
+   
+.card15 a img 
+ {
+ max-height: 250px;
+ width:100%;
+ max-width: 650px;   
+ }
+#act4{
+flex-direction: column;
+   
+}
+   
+ .card10, .card11, .card12, .card13, .card14, .card15 {
+ width: 650px;
+ margin-bottom: 10px;
+ margin-left: 0px;
+ box-shadow: 3px 3px 6px rgb(173, 167, 167); 
+ margin-left: 10px;    
+}
+
+
+footer
  {margin-top: 0px;
  width: 700px;
  height: 150px;
@@ -1379,5 +1362,8 @@ aside
  #rang3{            
  margin-left: 70px; 
 }
+
+
+
 
 }
