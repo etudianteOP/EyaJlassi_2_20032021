@@ -954,7 +954,7 @@ padding-bottom: 0px;
    
 }
 #act h3{
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 30px;
     font-size: 1.3em;
 }
@@ -1116,7 +1116,7 @@ h4{
     form {
         border: solid 1px #e6e1e1;
         border-radius: 10px;
-        width: 700px;
+        width: 600px;
         height: 80px;
         padding: 0px;
         margin-left: 10px;
@@ -1135,8 +1135,10 @@ h4{
         margin-bottom: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        padding-top:0px ;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-right: 5px;
+        padding-left: 5px;
         
     }
     .btnRechercher{
@@ -1224,7 +1226,7 @@ aside
    height: 800px;
      }
      #top-aside {
-    margin-left: 15px;
+    margin-left: 30px;
     font-size: 1.5em;
            }
      #chart-line{
