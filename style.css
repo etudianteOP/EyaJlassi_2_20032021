@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    width: 100%;
     }
 
 header{
@@ -7,15 +8,23 @@ header{
  flex-direction: row;
  justify-content: space-between;
  margin: 10px 20px 10px 20px;
- margin-top: 30px; 
+
     }
-    
-nav a:hover
+ 
+nav li a
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+nav li a:hover
 {
     color: #0065FC;
-    border-top: 3px  solid #0065FC;
-    padding-top: 27px;
+    border-top: 50px  solid #0065FC;
+    border-top-width: 5px;
+    padding-top: 25px;
+    
 }
+
 
 #bloc_recherche{
     padding-left: 20px;
@@ -28,8 +37,8 @@ nav a:hover
     display: flex;
     justify-content: space-between;
     margin-top: 0px;
-    margin-left: 400px;
-
+    margin-left: 300px;
+    
 }
 #entete{
     margin-top: 20px;
@@ -42,31 +51,33 @@ nav a:hover
 }
 
 form {
-    border: solid 1px #e6e1e1;
-    border-radius: 10px;
-    width: 240px;
-    height: 29px;
-    padding: 0px;
     
+    margin-top: 0em;   
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
 }
 .map {
     background-color: rgb(240, 235, 235);
     color: hsl(214, 78%, 2%);
-    border: solid 1px #deebff;
-    border-radius: 5px;
-    padding: 3px;
-    padding-bottom: 8px;
+    border: solid 0px #deebff;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    padding: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
 }
 button{
     background-color: #0065FC;
     color: rgb(247, 249, 252);
-    border: solid 1px #deebff;
-    border-radius: 10px;
-    padding: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 8px;
-    width: 81px;
+    border: solid 0px #deebff;
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+    padding: 16px;
+    width: 163px;
+    margin-left: 0px;
+    font-size: 1em;
     }
  .btnIcon 
     {
@@ -75,45 +86,53 @@ button{
 #rechercher{
     border-width:0px;
     border:none;
-    padding: 5px;
-    width: 130px;
+    padding-left: 20px;
+    width: 202px;
+    font-size: 1em;
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 0.063rem solid;
+    border-bottom: #F2F2F2 0.063rem solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-#information
-{
+#Filtre{
     display: flex;
+    justify-content:left;
+    align-items: center;
+    }
 
-}
-#information i 
-{
-    margin-top: 15px;
-    margin-right: 10px;
-}
+    #titre{
+    font-size: 1.2em;
+    margin-left: 10px;
+    }
 ul{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-right: 10px ;
+    
 }
 #liens ul li{
     border: solid 1px #e6e1e1;
-    border-radius: 25px;
-    justify-content: space-around;
-    margin: 10px;
-    padding-left: 0px;
-    padding-right:0px ;
-    padding-bottom:0px ;
-    padding-top:0px;
-}
+    border-radius: 30px;
+    justify-content: space-between;
+    margin: 20px;
+    width: auto;
+    }
+.titre-filtre {
+        margin: 20px;
+        font-size: 1.2em;
+        }
 #liens a:hover
 {
     color: #0065FC;
+
 }
 
 ul li i{
     border: solid 1px #deebff;
-    border-radius: 20px;
-    padding: 10px;
-    padding-left: 10px;
+    border-radius: 30px;
+    padding: 20px;
     text-decoration: none;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -122,8 +141,7 @@ ul li i{
 ul li a{
     text-decoration: none;
     color: black;
-    
-}
+    }
 #liens {
 justify-content: space-around;
 text-decoration: none;
@@ -153,17 +171,20 @@ nav a
     text-decoration: none;
 }
 
-
-#Filtre{
-display: flex;
-justify-content:left;
-align-items: center;
-}
-
-#information i {
-color: #0065FC;
+#information
+{
+    display: flex;
 
 }
+#information i 
+{
+    margin-top: 15px;
+    margin-right: 10px;
+    color: #0065FC;
+    }
+
+   
+
 #conteneur{
     
     align-items: center;
@@ -176,6 +197,7 @@ color: #0065FC;
     padding-top: 10px;
     padding-right: 5px ;
     padding-left: 5px;
+    margin-left: 15px;
 }
 #conteneur h3{
     padding-left: 20px;
@@ -184,11 +206,13 @@ color: #0065FC;
     border: solid 1px #e6e1e1;
     border-radius: 20px;
     background-color: white;
+
        
 }
 #stars1{
     padding-left: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    
 }
 #stars1, #étoile5{
     
@@ -217,6 +241,7 @@ color: #0065FC;
 }
 #stars4{
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 #stars4, #étoile16, #étoile17, #étoile18 {
     
@@ -251,10 +276,11 @@ color: #0065FC;
 }
 #conteneur a h3 {
     padding-left: 10px;
-
+line-height: 0px;
 }
 #conteneur a p {
     padding-left: 10px;
+    line-height: 0px;
 }
 #conteneur img {
    
@@ -294,12 +320,13 @@ aside{
     
 }
 #top-aside{
-    display: flex;
-    margin-left: 20px;
+display: flex;
+margin-left: 20px;
 padding-top: 10px;
+font-size:1.2em ;
 }
 #chart-line{
-    margin-left: 170px;
+    margin-left: 150px;
     margin-top: 15px;
 }
 
@@ -593,12 +620,14 @@ h4{
     margin-right: 150px;
 }
 
- @media all and (max-width: 812px)
+ @media all and (max-width: 767px)
 {
 
     header
     {
         flex-direction: column;
+        width: auto;
+        margin: 0px;
  
     }
     body{
@@ -608,13 +637,16 @@ h4{
     }
     #logo img{
        
-        width: 50px;
-        height: 50px;
+        width: auto;
+        margin-left: 20px;
+        margin-top: 10px;
     }
 
     #entete
     {
         flex-direction: row-reverse;
+        margin-right: 0px;
+        justify-content:stretch;
     }
     #ancres
    {
@@ -622,30 +654,56 @@ h4{
     padding-bottom: 10px;
     text-align: center;
     display: flex;
-    margin: 0px;
-        
+    margin-left: 0px;
+    margin-right: 0px;
+
    }
+ 
+
    #ancres li a
    {
-       padding-right: 75px;
-       font-size: 1.1em;
+       padding-left: 10px;
+       padding-right: 20px;
+       margin-left: 0px;
+       margin-right: 0px;
+       font-size: 1.4em;
+       border-top: none;
+       justify-content: center;
+       width: auto;
    }
-   nav a:hover
+  
+   nav li a:hover
 {
     color: #0065FC;
     border-bottom: 3px  solid #0065FC;
     padding-bottom: 12px;
-    border-top: none;
-    
-    padding-left: 33px;
-    
+    margin-right: 0px;
+    width: auto;
+          
 }
     nav span{
-        position: absolute;
-        top: 50px;
-        right: 40px;
-    
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    font-size: 1.3em;
+    order:1;
+    border-bottom: none;
     }
+
+
+    #bloc_page{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 500px; 
+    }
+
+
+    #bloc_recherche
+   {margin-top: 10px; 
+    margin-left: 0px;
+   }
+   
     form {
         border: solid 1px #e6e1e1;
         border-radius: 10px;
@@ -659,15 +717,22 @@ h4{
 
      button{
         border-radius: 10px;
-        width: 40px;
-        margin-left: 100px;
+        width: 45px;
+        margin-left: 20px;
         height: 36px;
         margin-bottom: 0px;
         margin-top: 0px;
         margin-right: 0px;
-        padding-top: 0px ;
+        padding-top: 5px ;
         padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
         
+    }
+    .btnIcon 
+    {
+        display: initial;
+      
     }
     .btnRechercher{
         display: none;
@@ -683,11 +748,7 @@ h4{
         padding-left: 10px;
         padding-top: 8px;
     }
-    .btnIcon 
-    {
-        display: initial;
-      
-    }
+    
        #sous_titre{ 
            padding-left: 15px;
 
@@ -695,6 +756,7 @@ h4{
       #Recherche h1{
         padding-left: 15px;
         font-size: 1.3em;
+        width: 300px;
       }
     #rechercher
     {
@@ -705,21 +767,24 @@ h4{
                 
     }
     #information{
-        margin-left: 10px;
+        
+        margin-left: 30px;
         margin-right: 10px;
     }
     
     #infor{
-        text-align:unset;
-        font-size: 0.9em;
+        text-align:start;
+        font-size: 1em;
+        width: 280px;
     }
-
+   
     #Filtre
     {
         
     flex-direction: column;
     justify-content:left;
     align-items: flex-start;
+    margin-bottom: 10px;
   
 
     }
@@ -729,36 +794,22 @@ h4{
         margin-bottom: 0px;
         padding-left: 10px;
     }
-       #liens ul{
     
+       #liens ul{
+       width: 380px;
         flex-wrap: wrap;
         padding-left: 2px;
-        padding-right: 20px;
+        padding-right: 15px;
            }
 
     #information  {
      text-align: justify;   
      }
 
-   #bloc_page
-   {
-    margin: 0px;
-    padding: 0px; 
-    height: 500px; 
+     #Recherche{
+       width: 380px;
    }
   
-   #logo img{
-    margin-right: 0px;
-        width: auto;
-   }
-   
-   section
-   {
-       width: auto;
-       flex-direction: column;
-       margin-top: 0px;
-       margin-left: 5px;
-   }
 
    #conteneur
 {
@@ -769,16 +820,21 @@ h4{
     border-radius: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-right: 5px ;
+    padding-right: 0px ;
     padding-left: 3px;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 0px;
+    
 }
 #conteneur h3{
     margin-left: 0px;
     padding-left: 0px;
     font-size: 1.3em;
+}
+#conteneur h4{
+    margin-top: 5px;
+    font-size: 1.2em;
 }
 
    #booking1{
@@ -809,33 +865,40 @@ h4{
     }
     section {
         flex-direction: column-reverse;
-        margin-left: 5px;
+        margin-top: 230px;
+        width: 380px;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    
     }
     
    aside
    {
-       width: 380px;
+       width: 420px;
        margin-bottom: 5px;
-       margin-top: 10px;
-       margin-left: 1px;
-       margin-right: 5px;
+       margin-top: 50px;
+       margin-left: 0px;
+       margin-right: 0px;
        height: 620px;
    }
    #top-aside p{
-       margin-left: 1px;
-       font-size: 1.1em;
+       margin-left: 7px;
+       font-size: 1em;
        text-align:left;
+       padding-top: 0px;
+
 
    }
    #chart-line{
-       margin-right: 6px;
+       margin-right: 10px;
    }
    .card7, .card8, .card9{
        height: 160px;
-       margin-left: 5px;
-       margin-right: 5px;
-       width: 350px;
        margin-left: 15px;
+       margin-right: 0px;
+       width: 380px;
    }
 
    aside img {
@@ -878,12 +941,15 @@ h4{
 line-height: 20px;
 padding-bottom: 0px;
 }
-  
+  #bloc-activites{
+      margin-top: 20px;
+      margin-left:  0px; 
+      margin-right: 10px ;
+  }
    #activites {
  flex-direction: column;
- width: 95%;
+ width:400px;
  margin-bottom: 0px;
- width: auto;
  margin-left: 0px;
    
 }
@@ -948,22 +1014,24 @@ padding-bottom: 0px;
     }
 
     .card10, .card11, .card12, .card13, .card14, .card15 {
-    width: 350px;
+    width: 380px;
     margin-bottom: 10px;
-    margin-left: 0px;
+    margin-left: 20px;
     
     box-shadow: 3px 3px 6px rgb(173, 167, 167); 
-    margin-left: 10px;    
-        }
+    
+}    
+        
  
         
 footer
 {
-    width: auto;
+    width: 420px;
     height: 450px;
     flex-direction: column;
     padding-left: 15px;
-     margin-left: 20px;
+     margin-left: 0px;
+     margin-right: 0px;
      padding-bottom: 0px;
      text-align: start;
     }
@@ -987,7 +1055,7 @@ h4{
 
 }
 
-@media all and (min-width: 683px) and (max-width: 1024px)
+@media all and (min-width: 768px) and (max-width: 1023px)
 {
 
     header
@@ -1005,7 +1073,9 @@ h4{
     }
     #bloc_page
     {
+     margin-left: 15px;
      width: auto; 
+     height: 950px;
     } 
     #entete
     {
@@ -1027,26 +1097,27 @@ h4{
        padding-right: 100px;
        font-size: 1.8em;
    }
-   nav a:hover
+   nav li a:hover
 {
     color: #0065FC;
     border-bottom: 3px  solid #0065FC;
     padding-bottom: 12px;
+    border-top: none;
    
        
 }
     nav span{
         position: absolute;
-        top: 80px;
-        right: 60px;
-        font-size: 1.6em;
+        top: 60px;
+        right: 80px;
+        font-size: 1.8em;
     
     }
     form {
         border: solid 1px #e6e1e1;
         border-radius: 10px;
-        width: 500px;
-        height: 60px;
+        width: 700px;
+        height: 80px;
         padding: 0px;
         margin-left: 10px;
         margin-left: 10px;
@@ -1058,9 +1129,9 @@ h4{
 
      button{
         border-radius: 10px;
-        width: 150px;
-        margin-left: 75px;
-        height: 60px;
+        width: 220px;
+        margin-left: 0px;
+        height: 80px;
         margin-bottom: 0px;
         margin-top: 0px;
         margin-right: 0px;
@@ -1076,15 +1147,13 @@ h4{
     .map {
         background-color: rgb(240, 235, 235);
         color: hsl(214, 78%, 2%);
-        border: solid 1px #deebff;
-        border-radius: 5px;
-        padding: 3px;
-        padding-bottom: 0px;
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top:13px;
-        width: 50px;
-        font-size: 200%;
+        border: solid 0px #deebff;
+        border-top-left-radius:10px ;
+        border-bottom-left-radius: 10px;
+        padding: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 2em;
     }
     
     .btnIcon 
@@ -1100,7 +1169,7 @@ h4{
         border:none;
         padding-left: 10px;
         font-size: 1.4em;
-        width: 250px;
+        width: 350px;
     }
     #information{
         margin-left: 10px;
@@ -1110,6 +1179,7 @@ h4{
     #infor{
         text-align:start;
         font-size: 1.5em;
+        width: 800px;
     }
     
     #information i 
@@ -1133,22 +1203,22 @@ h4{
         margin-bottom: 0px;
     }
        #liens ul{
-    
+
         flex-wrap: wrap;
         justify-content: right;
-        
+        width: 600px;
            }
  section
  {
  width: auto;
  flex-direction:column-reverse;
- margin-top: 80px;
+ margin-top: 30px;
  }
 aside
  {
    width: 715px;
    margin-bottom: 5px;
-   margin-top: 60px;
+   margin-top: 40px;
    margin-left: 10px;
    margin-right: 10px;
    height: 800px;
@@ -1208,7 +1278,7 @@ width: 300px;
     padding-top: 10px;
     padding-right: 5px ;
     padding-left: 5px;
-    margin-left: 5px;
+    margin-left: 25px;
     margin-top: 30px;
 }
 #conteneur h3{
@@ -1219,13 +1289,14 @@ width: 300px;
     border: solid 1px #e6e1e1;
     border-radius: 20px;
     background-color: white;
-    width: 90px;
-    height: 320px;
+    width: 205px;
+    height: 300px;
     margin-right: 15px;
 }
 
 #conteneur img {
-   width: 200px;
+   width: 185px;
+   height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-left: 10px;
@@ -1234,6 +1305,24 @@ width: 300px;
     justify-content: center;
     object-fit: cover;
     }
+    #conteneur h4{
+        font-size: 1.3em;
+    }
+ .card1 #parttwo h3{
+    line-height: 30px;
+    } 
+.card2 #partfour h3 {
+ padding-top: 30px;
+ } 
+ .card2 #partfour p {
+ padding-top: 30px;
+   } 
+
+ .card3 #partsix h3{
+ line-height: 30px;
+  } 
+
+
 #booking1 {
     display: flex;
     justify-content: center;
@@ -1242,7 +1331,7 @@ width: 300px;
     margin-right: 5px;
 }
 #stars2{
-    padding-top: 30px;
+    padding-top: 5px;
 }
 
 #booking2 {
@@ -1252,10 +1341,21 @@ width: 300px;
     width: 700px;
     height: 350px;
 }
+.card4 #partheight h3{
+    margin-top: 50px;
+}
+.card4 #partheight p{
+ margin-top: 50px;
+}
 #stars4{
-    padding-top: 30px;
-
+    padding-top: 5px;
 } 
+.card5 #partten h3{
+    line-height: 30px;
+     } 
+.card6 #parttwel h3{
+ line-height: 30px;
+  } 
 
 #activites {
     flex-direction: column;
@@ -1344,7 +1444,7 @@ flex-direction: column;
 footer
  {margin-top: 0px;
  width: 700px;
- height: 150px;
+ height: 250px;
  flex-direction: row;
  padding-left: 0px;
  margin-left: 15px;
@@ -1352,15 +1452,15 @@ footer
  text-align: start;
   }
  #rang1{
-    padding-left: 10px;
+    margin-right: 20px;
  }
                    
  #rang2{
-  margin-left: 70px;
+  margin-right: 20px;
  }
 
  #rang3{            
- margin-left: 70px; 
+ margin-left: 20px; 
 }
 
 
