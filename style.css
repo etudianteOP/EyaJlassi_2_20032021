@@ -17,6 +17,7 @@ nav li a
 {
     padding-right: 20px;
     padding-left: 20px;
+   
 }
 nav li a:hover
 {
@@ -24,6 +25,7 @@ nav li a:hover
     border-top: 50px  solid #0065FC;
     border-top-width: 5px;
     padding-top: 25px;
+    
     
 }
 
@@ -40,11 +42,19 @@ nav li a:hover
     justify-content: space-between;
     margin-top: 0px;
     margin-left: 300px;
+    list-style-type: none;
     
 }
 #entete{
     margin-top: 20px;
 }
+ul li a{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    
+    }
+
 #inscription{
     color:#0065FC;
 }
@@ -100,55 +110,62 @@ button{
 }
 #Filtre{
     display: flex;
-    justify-content:left;
-    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    align-items: center
+   
     }
 
     #titre{
-    font-size: 1.2em;
+   font-size: 1.2em;
     margin-left: 10px;
+    padding-top: 10px;
+    margin-right: 20px;
     }
-ul{
+
+#liens ul{
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    
+    list-style-type:none;
+   
 }
-#liens ul li{
-    border: solid 1px #e6e1e1;
-    border-radius: 30px;
-    justify-content: space-between;
-    margin: 20px;
-    width: auto;
+
+    #liens li{
+        padding-right: 0px;
+        border: solid 1px #e6e1e1;
+        border-radius: 30px;
+        margin: 10px;
+        
     }
-.titre-filtre {
-        margin: 20px;
+
+    #liens i{
+        color: #0065FC;
+        border:1px solid #deebff;
+        border-radius: 30px;
+        background-color: #DEEBFF;
+        width: 32px;
+        height: 33px;
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-right: 0px;
+        padding-top: 10px;
+        
+    }
+    
+    .titre-filtre {
+        margin-right: 10px;
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
         font-size: 1.2em;
-        }
+
+  }
+
 #liens a:hover
 {
     color: #0065FC;
-
 }
-
-ul li i{
-    border: solid 1px #deebff;
-    border-radius: 30px;
-    padding: 20px;
-    text-decoration: none;
-    background-color: #DEEBFF;
-    color: #0065FC;
     
-}
-ul li a{
-    text-decoration: none;
-    color: black;
-    }
-#liens {
-justify-content: space-around;
-text-decoration: none;
-}
-
 #logo
 {
 display: flex;
@@ -606,6 +623,7 @@ footer{
     display: flex;
     text-align: start;
     background-color:#F2F2F2 ;
+    
 
 }
 #à-propos{
@@ -614,6 +632,7 @@ footer{
 
 footer ul li {
     padding-bottom: 10px;
+    list-style-type: none;
 }
 h4{
     padding-left: 30px;
@@ -622,15 +641,14 @@ h4{
     margin-right: 150px;
 }
 
- @media all and (max-width: 767px)
+ @media all and (max-width: 812px)
 {
 
     header
     {
         flex-direction: column;
-        width: auto;
-        margin: 0px;
- 
+        width: 410px;
+                
     }
     body{
         width: auto;
@@ -640,7 +658,7 @@ h4{
     #logo img{
        
         width: auto;
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: 10px;
     }
 
@@ -648,24 +666,29 @@ h4{
     {
         flex-direction: row-reverse;
         margin-right: 0px;
+        margin-left: 280px;
         justify-content:stretch;
     }
     #ancres
    {
-    border-bottom: 3px solid #F2F2F2;
-    padding-bottom: 10px;
+    
     text-align: center;
     display: flex;
     margin-left: 0px;
     margin-right: 0px;
-
+    padding-right: 40px;
+    padding-left: 40px;
    }
- 
+ #ancres li{
+     margin-right: 0px;
+      }
 
    #ancres li a
    {
-       padding-left: 10px;
-       padding-right: 20px;
+       border-bottom: 3px solid #F2F2F2;
+       padding-bottom: 10px;
+       padding-left: 40px;
+       padding-right: 40px;
        margin-left: 0px;
        margin-right: 0px;
        font-size: 1.4em;
@@ -674,36 +697,36 @@ h4{
        width: auto;
    }
   
-   nav li a:hover
+   #ancres li a:hover
 {
     color: #0065FC;
-    border-bottom: 3px  solid #0065FC;
+    border-bottom: 3px solid #0065FC;
     padding-bottom: 12px;
     margin-right: 0px;
+    margin-left: 0px;
     width: auto;
           
 }
     nav span{
     position: absolute;
-    top: 30px;
-    right: 35px;
+    top: 35px;
+    right: 0px;
     font-size: 1.3em;
-    order:1;
     border-bottom: none;
     }
 
 
     #bloc_page{
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-right: 0px;
-        height: 500px; 
+        height: 400px; 
     }
 
 
     #bloc_recherche
    {margin-top: 10px; 
-    margin-left: 0px;
+    margin-left: 10px;
    }
    
     form {
@@ -752,11 +775,11 @@ h4{
     }
     
        #sous_titre{ 
-           padding-left: 15px;
+           padding-left: 0px;
 
       }
       #Recherche h1{
-        padding-left: 15px;
+        padding-left: 0px;
         font-size: 1.3em;
         width: 300px;
       }
@@ -764,44 +787,50 @@ h4{
     {
         border-width:0px;
         border:none;
-        padding-left: 10px;
+        padding-left: 0px;
         
                 
     }
     #information{
         
-        margin-left: 30px;
+        margin-left: 0px;
         margin-right: 10px;
     }
     
     #infor{
         text-align:start;
         font-size: 1em;
-        width: 280px;
+        width: 380px;
     }
    
+
     #Filtre
     {
         
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content:left;
     align-items: flex-start;
     margin-bottom: 10px;
-  
+
 
     }
     #titre{
-        margin-left: 10px;
+        margin-left: 0px;
         margin-top: 30px;
         margin-bottom: 0px;
-        padding-left: 10px;
+        padding-left: 0px;
+    }
+    #liens ul li{
+        margin-left: 0px;
     }
     
        #liens ul{
-       width: 380px;
+        flex-direction: row;
         flex-wrap: wrap;
-        padding-left: 2px;
-        padding-right: 15px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
            }
 
     #information  {
@@ -812,7 +841,6 @@ h4{
        width: 380px;
    }
   
-
    #conteneur
 {
     flex-direction: column;
@@ -867,7 +895,7 @@ h4{
     }
     section {
         flex-direction: column-reverse;
-        margin-top: 230px;
+        margin-top: 130px;
         width: 380px;
         flex-direction: column;
         margin-left: 0px;
@@ -1063,7 +1091,7 @@ h4{
     header
     {
         flex-direction: column;
- 
+        width: 780px;
     }
     body{
         width: auto;
@@ -1075,13 +1103,17 @@ h4{
     }
     #bloc_page
     {
-     margin-left: 15px;
-     width: auto; 
-     height: 950px;
+     margin-left: 25px;
+     width: 700px; 
+     height: 820px;
+     margin-bottom: 30px;
     } 
     #entete
     {
         flex-direction: row-reverse;
+        margin-right: 5px;
+        margin-left: 0px;
+        
     }
     #ancres
    {
@@ -1090,21 +1122,40 @@ h4{
     text-align: center;
     display: flex;
     margin-left: 0px;
+    width: auto;
+    font-size: 1.3em;
+
    }
  
-
+#ancres li{
+    margin-right: 0px;
+    width: 360px;
+}
    #ancres li a
    {
-       padding-left: 150px;
-       padding-right: 100px;
-       font-size: 1.8em;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 1.8em;
+    border-top: none;
+    justify-content: center;
+    width: 340px;
+       /*padding-left: 0px;
+       padding-right: 0px;
+       margin-left: 0px;
+       margin-right: 35px;
+       font-size: 1.8em;*/
    }
-   nav li a:hover
+   #ancres li a:hover
 {
     color: #0065FC;
     border-bottom: 3px  solid #0065FC;
     padding-bottom: 12px;
     border-top: none;
+    width: 600px;
    
        
 }
@@ -1115,10 +1166,14 @@ h4{
         font-size: 1.8em;
     
     }
+    #bloc_saisie{
+        width: 700px;
+    }
+
     form {
         border: solid 1px #e6e1e1;
         border-radius: 10px;
-        width: 600px;
+        width: 640px;
         height: 80px;
         padding: 0px;
         margin-left: 10px;
@@ -1165,19 +1220,28 @@ h4{
         display: none;
 
     }
-    #Recherche h1{ font-size: 2em;}
-
+    #Recherche h1{ font-size: 2em;
+    text-align: start;
+    width: 600px;
+}
+    #Recherche p{
+    text-align: start;
+    width: 600px;
+}
     #rechercher
     {
         border-width:0px;
         border:none;
         padding-left: 10px;
         font-size: 1.4em;
-        width: 350px;
+        width: 550px;
     }
     #information{
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        width: 600px;
     }
     
     #infor{
@@ -1198,33 +1262,61 @@ h4{
         
     flex-direction: column;
     font-size: 2em;
-    margin-left: 5px; 
+    margin-left: 0px; 
     justify-content: start;
     }
     #titre{
-        margin-right: 500px;
+        margin-right: 550px;
         margin-top: 30px;
         margin-bottom: 0px;
     }
        #liens ul{
-
+        padding-bottom: 30px;
         flex-wrap: wrap;
-        justify-content: right;
-        width: 600px;
+        justify-content: space-between;
+        width: 700px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        
            }
+
+
+           #liens li{
+            flex-wrap: wrap;
+            padding-right: 0px;
+            border: solid 1px #e6e1e1;
+            border-radius: 40px;
+            margin: 10px;
+            
+        }
+           #liens i{
+            color: #0065FC;
+            border:1px solid #deebff;
+            border-radius: 40px;
+            background-color: #DEEBFF;
+            width: 60px;
+            height: 70px;
+            margin-right: 5px;
+            padding-left: 20px;
+            padding-right: 5px;
+            padding-top: 25px;
+            
+        }
+        
+
  section
  {
  width: auto;
  flex-direction:column-reverse;
- margin-top: 30px;
+ margin-top: 10px;
  }
 aside
  {
    width: 715px;
    margin-bottom: 5px;
-   margin-top: 40px;
-   margin-left: 10px;
-   margin-right: 10px;
+   margin-top: 60px;
+   margin-left: 30px;
+   margin-right: 5px;
    height: 800px;
      }
      #top-aside {
@@ -1284,6 +1376,7 @@ width: 300px;
     padding-left: 5px;
     margin-left: 25px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 #conteneur h3{
     padding-left: 20px;
@@ -1367,7 +1460,7 @@ width: 300px;
     margin-bottom: 10px;
     width: auto;
     margin-top: 0px;
-    margin-left: 10px;
+    margin-left: 30px;
       
    }
    #act h3{
@@ -1451,7 +1544,7 @@ footer
  height: 250px;
  flex-direction: row;
  padding-left: 0px;
- margin-left: 15px;
+ margin-left: 30px;
  padding-bottom: 0px;
  text-align: start;
   }
