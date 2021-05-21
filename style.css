@@ -1143,12 +1143,9 @@ h4{
     border-top: none;
     justify-content: center;
     width: 340px;
-       /*padding-left: 0px;
-       padding-right: 0px;
-       margin-left: 0px;
-       margin-right: 35px;
-       font-size: 1.8em;*/
+      
    }
+
    #ancres li a:hover
 {
     color: #0065FC;
